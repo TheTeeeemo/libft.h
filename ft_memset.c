@@ -1,19 +1,21 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isalnum.c                                       :+:      :+:    :+:   */
+/*   ft_memset.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ttroll <ttroll@student.42heilbronn.de>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/10/08 19:55:24 by ttroll            #+#    #+#             */
-/*   Updated: 2024/10/09 15:24:58 by ttroll           ###   ########.fr       */
+/*   Created: 2024/10/15 11:15:02 by ttroll            #+#    #+#             */
+/*   Updated: 2024/10/15 12:28:40 by ttroll           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_isalnum(int c)
-{
-	if ((c >= 48 && 57 >= c) || (c >= 65 && 90 >= c) || (c >= 97 && 122 >= c))
-		return (1);
-	else
-		return (0);
+void *my_memset(void *ptr, int value, size_t num) {
+	
+    unsigned char *p = (unsigned char *)ptr;
+
+
+    // "value" wird ebenfalls in ein Byte (unsigned char) umgewandelt.
+    
+    // Als nächstes solltest du eine Schleife machen, um den Speicher zu füllen.
 }

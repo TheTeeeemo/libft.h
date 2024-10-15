@@ -6,13 +6,13 @@
 /*   By: ttroll <ttroll@student.42heilbronn.de>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/08 16:59:39 by ttroll            #+#    #+#             */
-/*   Updated: 2024/10/08 17:51:21 by ttroll           ###   ########.fr       */
+/*   Updated: 2024/10/09 17:36:41 by ttroll           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_isdigit(int d)
+int	ft_isdigit(int c)
 {
-	if (d >= 48 && 57 >= d)
+	if (c >= 48 && c <= 57)
 		return (1);
 	else
 		return (0);
@@ -22,6 +22,6 @@ int	ft_isdigit(int d)
 
 // int main(void)
 // {
-// 	int a = '9';
+// 	int a = '!';
 // 	printf("%d", ft_isdigit(a));
 // }

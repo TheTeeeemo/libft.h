@@ -1,19 +1,34 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isalnum.c                                       :+:      :+:    :+:   */
+/*   ft_strlen.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ttroll <ttroll@student.42heilbronn.de>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/10/08 19:55:24 by ttroll            #+#    #+#             */
-/*   Updated: 2024/10/09 15:24:58 by ttroll           ###   ########.fr       */
+/*   Created: 2024/10/09 17:58:07 by ttroll            #+#    #+#             */
+/*   Updated: 2024/10/15 11:02:31 by ttroll           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_isalnum(int c)
+#include <stdio.h>
+
+size_t	ft_strlen(const char *s)
 {
-	if ((c >= 48 && 57 >= c) || (c >= 65 && 90 >= c) || (c >= 97 && 122 >= c))
-		return (1);
-	else
-		return (0);
+	size_t	c;
+
+	c = 0;
+	while(s[c] != '\0')
+	{
+		c++;
+	}
+	return (c);
 }
+
+// #include <stdio.h>
+
+// int main(void)
+// {
+// 	char *a = "Aledumm";
+// 	printf("%zu", ft_strlen(a));
+//     return 0;
+// }
